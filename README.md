@@ -8,5 +8,5 @@ Twikly is a Start-up composed of seven GUC Computer Science and Engineering Stud
 Name  | ID
 ------------- | -------------
 Ayatallah Amr  | 28-2249
-
+Ahmed Walid    | 28-0967
 -- Know more about our upcoming Project SOON, Stay Tuned!
