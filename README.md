@@ -13,5 +13,5 @@ Karim Taha      | 28-3021
 Tarek El-Bieh   | 28-3008
 Mohamed El-Alfy | 28-1708
 Ahmed Tarek kamel| 28-4603
-
+Rana Saleh Elfedawy|28-5758
 -- Know more about our upcoming Project SOON, Stay Tuned!
