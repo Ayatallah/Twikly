@@ -1,0 +1,15 @@
+<p>
+  <strong>Commenter:</strong>
+  <%= sub_comment.commenter %>
+</p>
+ 
+<p>
+  <strong>Comment:</strong>
+  <%= sub_comment.body %>
+</p>
+
+<p>
+	<%= link_to 'Delete Sub comment', [sub_comment.comment, sub_comment],
+	    method: :delete,
+	    data: { confirm: 'Are you sure ?'} %>
+</p> 
