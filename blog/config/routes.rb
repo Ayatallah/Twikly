@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resources :articles do
+    resources :youtubes
+  end
+  resources :articles do
     resources :photos
   end
    resources :articles  do

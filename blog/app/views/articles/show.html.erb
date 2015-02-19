@@ -11,9 +11,12 @@
 <%= render @article.comments %>
 
 <h2>Photos</h2>
-
 <%= render @article.photos %>
 <%= render 'photos/form' %>
+
+<h2>Videos</h2>
+<%= render @article.youtubes %>
+<%= render 'youtubes/form' %>
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
 

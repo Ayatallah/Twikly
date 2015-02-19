@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218172501) do
+ActiveRecord::Schema.define(version: 20150219140925) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -48,5 +48,14 @@ ActiveRecord::Schema.define(version: 20150218172501) do
   end
 
   add_index "sub_comments", ["comment_id"], name: "index_sub_comments_on_comment_id"
+
+  create_table "youtubes", force: :cascade do |t|
+    t.string   "youtube_url"
+    t.integer  "article_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "youtubes", ["article_id"], name: "index_youtubes_on_article_id"
 
 end

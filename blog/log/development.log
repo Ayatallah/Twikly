@@ -23956,3 +23956,1377 @@ Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1
 Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-19 04:25:54 +0200
   [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
   [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateYouTubes (20150219135144)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "you_tubes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "youtube_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219135144"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateYouTubes (20150219135144)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "you_tubes"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20150219135144"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateYoutubes (20150219135513)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "youtubes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "youtube_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219135513"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateYoutubes (20150219135513)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "youtubes"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20150219135513"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateYoutubes (20150219140925)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "youtubes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "youtube_url" varchar, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_youtubes_on_article_id" ON "youtubes" ("article_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219140925"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+
+
+
+Started GET "/articles" for ::1 at 2015-02-19 16:13:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 532ms (Views: 499.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:13:03 +0200
+
+
+Started GET "/articles/new" for ::1 at 2015-02-19 16:13:07 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (153.9ms)
+  Rendered articles/new.html.erb within layouts/application (159.2ms)
+Completed 200 OK in 287ms (Views: 283.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for ::1 at 2015-02-19 16:13:15 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mLAnONvxkbbvTVUm04pzeu7HI7lZwUAN9p9cBZPXeH0swH8Oi0SmHC53TdChfHdEurNgJsPY+OfMgqkjlK6ccw==", "article"=>{"title"=>"ghasd", "text"=>"xcaxc"}, "commit"=>"Create Article"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "ghasd"], ["text", "xcaxc"], ["created_at", "2015-02-19 14:13:15.746673"], ["updated_at", "2015-02-19 14:13:15.746673"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/12
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:13:15 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (23.7ms)
+  Rendered articles/show.html.erb within layouts/application (130.4ms)
+Completed 500 Internal Server Error in 159ms
+
+ActionView::Template::Error (undefined method `youtubes' for #<Article:0x00000106428a90>):
+    15: <%= render 'photos/form' %>
+    16: 
+    17: <h2>Videos</h2>
+    18: <%= render @article.youtubes %>
+    19: <%= render 'youtubes/form' %>
+    20: <h2>Add a comment:</h2>
+    21: <%= render 'comments/form' %>
+  app/views/articles/show.html.erb:18:in `_app_views_articles_show_html_erb__1949732411049880630_2199980320'
+
+
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:14:13 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (5.5ms)
+  Rendered articles/show.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `youtubes' for #<Article:0x0000010171d098>):
+    15: <%= render 'photos/form' %>
+    16: 
+    17: <h2>Videos</h2>
+    18: <%= render @article.youtubes %>
+    19: <%= render 'youtubes/form' %>
+    20: <h2>Add a comment:</h2>
+    21: <%= render 'comments/form' %>
+  app/views/articles/show.html.erb:18:in `_app_views_articles_show_html_erb__1949732411049880630_2199980320'
+
+
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.5ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:19:11 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (4.7ms)
+  Rendered articles/show.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `youtubes' for #<Article:0x000001022dfbd8>):
+    15: <%= render 'photos/form' %>
+    16: 
+    17: <h2>Videos</h2>
+    18: <%= render @article.youtubes %>
+    19: <%= render 'youtubes/form' %>
+    20: <h2>Add a comment:</h2>
+    21: <%= render 'comments/form' %>
+  app/views/articles/show.html.erb:18:in `_app_views_articles_show_html_erb__1949732411049880630_2199980320'
+
+
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:19:38 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (7.3ms)
+  Rendered articles/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 131ms (Views: 129.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:19:39 +0200
+
+
+Started POST "/articles/12/comments" for ::1 at 2015-02-19 16:19:46 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XSIeyRuZ3b91/PyC92PdOsahW+QqzS3F5ZNlEynpWpzpUkb/SyzqFbTG5HSFldkEktUYe7DUlS/fjpA1LpC+kg==", "comment"=>{"commenter"=>"asdasd", "body"=>"asdasdas"}, "commit"=>"Create Comment", "article_id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "asdasd"], ["body", "asdasdas"], ["article_id", 12], ["created_at", "2015-02-19 14:19:46.373215"], ["updated_at", "2015-02-19 14:19:46.373215"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/12
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:19:46 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered comments/_comment.html.erb (0.8ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (1.5ms)
+  Rendered articles/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:19:46 +0200
+
+
+Started POST "/articles/12/photos" for ::1 at 2015-02-19 16:19:52 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhDfH5B0fSTYMM2MqUPrARFUaSDQSoXvknTe9OL7pkPaYIcpwMFKjhkK1Xrbte8/RSAqv0pTPQWoaSvS5YJCTQ==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x000001015ffa08 @tempfile=#<Tempfile:/var/folders/03/qm8912pn2cs0t7d6wb6ng27c0000gn/T/RackMultipart20150219-531-1sktagb.jpeg>, @original_filename="Baines1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"Baines1.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo", "article_id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("image", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "Baines1.jpeg"], ["article_id", 12], ["created_at", "2015-02-19 14:19:52.828294"], ["updated_at", "2015-02-19 14:19:52.828294"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/12
+Completed 302 Found in 248ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/articles/12" for ::1 at 2015-02-19 16:19:52 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 12]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered photos/_photo.html.erb (2.4ms)
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered comments/_form.html.erb (2.1ms)
+  Rendered articles/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 167ms (Views: 166.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:19:53 +0200
+
+
+Started GET "/articles" for ::1 at 2015-02-19 16:19:55 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 126ms (Views: 124.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/articles/12" for ::1 at 2015-02-19 16:19:58 +0200
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"D3AUoap3Ezpa0QwUZErfbnz/LeiTQa1woQHN6PIGsqu7AEyX+sIkkJvrFOIWvNtQKItudwlYFZqbHDjO9X9WpQ==", "id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  [1m[35mSubComment Load (0.3ms)[0m  SELECT "sub_comments".* FROM "sub_comments" WHERE "sub_comments"."comment_id" = ?  [["comment_id", 4]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 12]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.8ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 34ms
+
+NameError (uninitialized constant Article::Yotube):
+  app/controllers/articles_controller.rb:38:in `destroy'
+
+
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (10.9ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+
+
+Started DELETE "/articles/12" for ::1 at 2015-02-19 16:20:50 +0200
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"D3AUoap3Ezpa0QwUZErfbnz/LeiTQa1woQHN6PIGsqu7AEyX+sIkkJvrFOIWvNtQKItudwlYFZqbHDjO9X9WpQ==", "id"=>"12"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  [1m[35mSubComment Load (0.1ms)[0m  SELECT "sub_comments".* FROM "sub_comments" WHERE "sub_comments"."comment_id" = ?  [["comment_id", 4]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 12]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 21]]
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 12]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 12]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 41ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/articles" for ::1 at 2015-02-19 16:20:50 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:20:51 +0200
+
+
+Started GET "/articles/new" for ::1 at 2015-02-19 16:20:52 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for ::1 at 2015-02-19 16:20:56 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HhCaXt9xteP+/Uv1Sjow391gIA/Rh3jh0J05SzU/5wOqYMJoj8SCST/HUwM4zDThiRRjkEuewAvqgMxtMkYDDQ==", "article"=>{"title"=>"asdad", "text"=>"adad"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdad"], ["text", "adad"], ["created_at", "2015-02-19 14:20:56.517086"], ["updated_at", "2015-02-19 14:20:56.517086"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:20:56 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (1.8ms)
+  Rendered comments/_form.html.erb (2.3ms)
+  Rendered articles/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 127ms (Views: 126.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:20:56 +0200
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:21:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (6.8ms)
+  Rendered comments/_form.html.erb (2.0ms)
+  Rendered articles/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:21:09 +0200
+
+
+Started POST "/articles/13/youtubes" for ::1 at 2015-02-19 16:21:20 +0200
+Processing by YoutubesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qM98u77k0Uev6zh7ow3YTmNsxJv2Fpk72rDjPoPvwhkcvySN7lHm7W7RII3R+9xwNxiHBGwPIdHgrRYYhJYmFw==", "youtube"=>{"youtube_url"=>"https://www.youtube.com/watch?v=jbsjY4vfbcg"}, "commit"=>"Create Youtube", "article_id"=>"13"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  app/controllers/youtubes_controller.rb:6:in `create'
+
+
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/a_walid/.rvm/gems/ruby-2.1.1/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+
+
+Started POST "/articles/13/youtubes" for ::1 at 2015-02-19 16:22:48 +0200
+Processing by YoutubesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qM98u77k0Uev6zh7ow3YTmNsxJv2Fpk72rDjPoPvwhkcvySN7lHm7W7RII3R+9xwNxiHBGwPIdHgrRYYhJYmFw==", "youtube"=>{"youtube_url"=>"https://www.youtube.com/watch?v=jbsjY4vfbcg"}, "commit"=>"Create Youtube", "article_id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "youtubes" ("youtube_url", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["youtube_url", "https://www.youtube.com/watch?v=jbsjY4vfbcg"], ["article_id", 13], ["created_at", "2015-02-19 14:22:48.719385"], ["updated_at", "2015-02-19 14:22:48.719385"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 20ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:22:48 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (5.2ms)
+  [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 13]]
+  Rendered youtubes/_youtube.html.erb (0.6ms)
+  Rendered youtubes/_form.html.erb (2.2ms)
+  Rendered comments/_form.html.erb (6.3ms)
+  Rendered articles/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 170ms (Views: 168.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:22:48 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:22:49 +0200
+
+
+Started POST "/articles/13/photos" for ::1 at 2015-02-19 16:23:07 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FMvmrK/VlpibyvTIL0Pr5BLsAJBIXpy5gtfx61mXfnqgu76a/2ChMlrw7D5dte/aRphDD9JHJFO4ygTNXu6adA==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x000001064f1a08 @tempfile=#<Tempfile:/var/folders/03/qm8912pn2cs0t7d6wb6ng27c0000gn/T/RackMultipart20150219-531-qzatty.jpg>, @original_filename="Paulo-Di-Canio-celebrates-wonder-goal-West-Ha_1432494.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"Paulo-Di-Canio-celebrates-wonder-goal-West-Ha_1432494.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo", "article_id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("image", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "Paulo-Di-Canio-celebrates-wonder-goal-West-Ha_1432494.jpg"], ["article_id", 13], ["created_at", "2015-02-19 14:23:07.736970"], ["updated_at", "2015-02-19 14:23:07.736970"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 60ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:23:07 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered photos/_photo.html.erb (1.8ms)
+  Rendered photos/_form.html.erb (2.2ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 13]]
+  Rendered youtubes/_youtube.html.erb (0.1ms)
+  Rendered youtubes/_form.html.erb (2.7ms)
+  Rendered comments/_form.html.erb (2.1ms)
+  Rendered articles/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 169ms (Views: 167.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:23:07 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:08 +0200
+
+
+Started POST "/articles/13/youtubes" for ::1 at 2015-02-19 16:23:45 +0200
+Processing by YoutubesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V2D8n6/Q9QV3w2ewsvY8FQ6ebfGu4ItD1ZRwx4oMw2XjEKSp/2XCr7b5f0bAADgrWuoubjT5M6nviYXhjXUnaw==", "youtube"=>{"youtube_url"=>"https://www.youtube.com/watch?v=jbsjY4vfbcg"}, "commit"=>"Create Youtube", "article_id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "youtubes" ("youtube_url", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["youtube_url", "https://www.youtube.com/watch?v=jbsjY4vfbcg"], ["article_id", 13], ["created_at", "2015-02-19 14:23:45.370184"], ["updated_at", "2015-02-19 14:23:45.370184"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:23:45 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.4ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 13]]
+  Rendered youtubes/_youtube.html.erb (0.1ms)
+  Rendered youtubes/_form.html.erb (2.1ms)
+  Rendered comments/_form.html.erb (3.3ms)
+  Rendered articles/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:23:45 +0200
+
+
+Started POST "/articles/13/youtubes" for ::1 at 2015-02-19 16:23:57 +0200
+Processing by YoutubesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LAsBJclWwt51YQk1aPPX8v/0DOve5nDDKPo4Hmy1z2mYe1kTmeP1dLRbEcMaBdPMq4BPdET/yCkS5804a8wrZw==", "youtube"=>{"youtube_url"=>"https://www.youtube.com/watch?v=OPf0YbXqDm0"}, "commit"=>"Create Youtube", "article_id"=>"13"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "youtubes" ("youtube_url", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["youtube_url", "https://www.youtube.com/watch?v=OPf0YbXqDm0"], ["article_id", 13], ["created_at", "2015-02-19 14:23:57.070170"], ["updated_at", "2015-02-19 14:23:57.070170"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/13" for ::1 at 2015-02-19 16:23:57 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 13]]
+  Rendered youtubes/_youtube.html.erb (0.3ms)
+  Rendered youtubes/_form.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered articles/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:23:57 +0200
+
+
+Started GET "/articles" for ::1 at 2015-02-19 16:24:28 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 161ms (Views: 159.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/articles/13" for ::1 at 2015-02-19 16:24:30 +0200
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qZq4ZCRsQjozc+7885YNoEt5q8kSDlq7HdhCXPmPzGsd6uBSdNl1kPJJ9gqBYAmeHw3oVogX4lEnxbd6/vYoZQ==", "id"=>"13"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 13]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "photos" WHERE "photos"."id" = ?  [["id", 22]]
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 13]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "youtubes" WHERE "youtubes"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "youtubes" WHERE "youtubes"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "youtubes" WHERE "youtubes"."id" = ?  [["id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 13]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 12ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/articles" for ::1 at 2015-02-19 16:24:30 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
+  [1m[36mPhoto Load (1.3ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
