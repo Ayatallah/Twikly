@@ -1,4 +1,3 @@
-<%= image_tag @article.photo.url %>
 <p>
 	<strong>Title:</strong>
 	<%= @article.title %>
@@ -11,6 +10,10 @@
 <h2>Comments</h2>
 <%= render @article.comments %>
 
+<h2>Photos</h2>
+
+<%= render @article.photos %>
+<%= render 'photos/form' %>
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
 
