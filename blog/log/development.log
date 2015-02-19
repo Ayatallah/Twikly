@@ -25330,3 +25330,656 @@ Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-19 16:24:30 +0200
   [1m[36mPhoto Load (1.3ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
   [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:16:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:16:57 +0200
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :welcome/index` to `controller: :welcome/index`. (called from block in <top (required)> at /home/ispoonjelly/workspace/blog/config/routes.rb:6)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 499ms (Views: 499.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for 127.0.0.1 at 2015-02-19 17:17:20 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:17:23 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 126ms (Views: 106.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-02-19 17:17:24 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (21.8ms)
+  Rendered articles/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 132ms (Views: 127.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:17:27 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 116ms (Views: 114.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-02-19 17:17:28 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.1ms)
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:17:31 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:18:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:18:03 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:18:05 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-02-19 17:18:07 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.2ms)
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 71ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-02-19 17:18:16 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Wqr2S7DwdrSKaFze1OuKoItBpA2gVPUDVVgX0HWvaZZJSmutWmjwC0ENc7MMaboag9blOoj4Hr3ljdQ4YCPeQ==", "article"=>{"title"=>"sample post", "text"=>"sample body"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sample post"], ["text", "sample body"], ["created_at", "2015-02-19 15:18:16.225086"], ["updated_at", "2015-02-19 15:18:16.225086"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/14
+Completed 302 Found in 15ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 17:18:16 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered photos/_form.html.erb (13.4ms)
+  [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (5.9ms)
+  Rendered comments/_form.html.erb (6.2ms)
+  Rendered articles/show.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 141ms (Views: 130.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:18:16 +0200
+
+
+Started POST "/articles/14/photos" for 127.0.0.1 at 2015-02-19 17:18:25 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aOTOHJYokcoxEOxL6EpahXk8Z+1w9JVlx+Ca8ecdlujsq0xrDYLz0M49ePZfKFJHkR466axWJss9I83+R0ukNw==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007fe8dcf16658 @tempfile=#<Tempfile:/tmp/RackMultipart20150219-15337-12ys0u1.jpg>, @original_filename="cat2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"cat2.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo", "article_id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "photos" ("image", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "cat2.jpg"], ["article_id", 14], ["created_at", "2015-02-19 15:18:25.838526"], ["updated_at", "2015-02-19 15:18:25.838526"]]
+  [1m[35m (7.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/14
+Completed 302 Found in 266ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 17:18:25 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.4ms)
+  Rendered photos/_form.html.erb (1.5ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.3ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered articles/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 90ms (Views: 88.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:18:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150219152106)
+  [1m[35m (0.1ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/ispoonjelly/workspace/blog/db/migrate/20150219152106_devise_create_users.rb:34)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219152106"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUser (20150219152135)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219152135"]]
+  [1m[36m (7.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddAuthToUser (20150219152152)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "auth" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150219152152"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_article_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sub_comments_on_comment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_youtubes_on_article_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:25:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 138ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:25:06 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:25:08 +0200
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 13ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-19 17:25:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (8.0ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 149ms (Views: 138.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-19 17:25:33 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bJ3BNMjzqDA4jY7ZfIyeOkLCJwX9VS6CGV4zrMZcIg3o0kNDU1nKKsegGmTL7pb4quB6ASH3nSzjnWSjZgoQ0g==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tare2@gmail.com"]]
+Completed 401 Unauthorized in 10ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bJ3BNMjzqDA4jY7ZfIyeOkLCJwX9VS6CGV4zrMZcIg3o0kNDU1nKKsegGmTL7pb4quB6ASH3nSzjnWSjZgoQ0g==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.2ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 188ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:25:34 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-02-19 17:25:38 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (4.4ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:25:38 +0200
+
+
+Started POST "/users" for 127.0.0.1 at 2015-02-19 17:25:47 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ij4wns/OgSBD4beeE6len7ujrms+z2T1nyUo1i6NVrIOcbLpVGTjOrzMIyOky1ZdU4Hzb+Jt11tl5n/ZjttkbQ==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'tare2@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "tare2@gmail.com"], ["encrypted_password", "$2a$10$Fjo3U/5hiYeXkx2Y3lTyCufDtv77qmQR/0VVFwxzaPBDbtkw.HzQO"], ["created_at", "2015-02-19 15:25:47.948879"], ["updated_at", "2015-02-19 15:25:47.948879"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-19 15:25:47.958284"], ["current_sign_in_at", "2015-02-19 15:25:47.958284"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-02-19 15:25:47.959877"], ["id", 1]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 119ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:25:47 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 95ms (Views: 85.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:25:48 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 17:25:51 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.4ms)
+  Rendered photos/_form.html.erb (3.0ms)
+  [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (5.6ms)
+  Rendered comments/_form.html.erb (7.0ms)
+  Rendered articles/show.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 121ms (Views: 116.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 17:56:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 127.0.0.1 at 2015-02-19 17:56:34 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 17:56:37 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 18:06:15 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/menu/_registration_items.html.erb (1.5ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (Missing partial devise/menu/_login_items with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/home/ispoonjelly/workspace/blog/app/views"
+  * "/home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views"
+):
+    10: 
+    11: <ul class="hmenu">
+    12:   <%= render 'devise/menu/registration_items' %>
+    13:   <%= render 'devise/menu/login_items' %>
+    14: </ul>
+    15: 
+    16: <% if notice %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__931121239379656204_28258320'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 18:07:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/menu/_registration_items.html.erb (0.8ms)
+  Rendered devise/menu/_login_tools.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-34c60bbc746236ae9614cc64cbb027aa.css?body=1" for 127.0.0.1 at 2015-02-19 18:07:02 +0200
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-02-19 18:07:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (4.6ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (44.5ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-02-19 18:07:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ispoonjelly/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (45.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 18:08:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/menu/_registration_items.html.erb (0.9ms)
+  Rendered devise/menu/_login_tools.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-02-19 18:08:39 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I17m5uf3a4ZAytzOr6SYF9e3/zW4SM6v+QvXCeh54rynEWSRfF0JnL/nSHMYxpDVP5WiMWTqfQEDyIAGSC/QYw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 18:08:39 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-19 18:08:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.2ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-19 18:08:47 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P5hd16qVrbzphgG6wckOskHAaazFKvn2WAtX8r/Ny0sioQjX2lPiFVnA4Aqv/Ur5mP+5USxvZh8lt3KYLMwhUQ==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "tare2@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2015-02-19 16:08:47.370379"], ["sign_in_count", 2], ["updated_at", "2015-02-19 16:08:47.371391"], ["id", 1]]
+  [1m[35m (6.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 18:08:47 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/menu/_registration_items.html.erb (0.8ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 18:08:51 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+  Rendered devise/menu/_registration_items.html.erb (0.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.2ms)
