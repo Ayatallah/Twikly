@@ -7,6 +7,10 @@
 	<strong>Text:</strong>
 	<%= @article.text %>
 </p>
+
+<strong>Share on Facebook or G+</strong>
+<%= social_share_button_tag(@article.title, :popup => "true") %>
+
 <h2>Comments</h2>
 <%= render @article.comments %>
 

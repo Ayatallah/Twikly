@@ -25983,3 +25983,1817 @@ Processing by ArticlesController#index as HTML
   Rendered devise/menu/_registration_items.html.erb (0.4ms)
   Rendered devise/menu/_login_tools.html.erb (0.4ms)
 Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 20:13:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Invalid CSS after "...al-share-button": expected "{", was ""
+  (in /home/ispoonjelly/workspace/blog/app/assets/stylesheets/application.scss:2)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4495542224383381813_70215200403000'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered devise/menu/_registration_items.html.erb (4.0ms)
+  Rendered devise/menu/_login_tools.html.erb (0.5ms)
+Completed 200 OK in 473ms (Views: 472.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:22 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:23 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 20:15:24 +0200
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 5ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-19 20:15:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (7.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (24.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.2ms)
+Completed 200 OK in 133ms (Views: 121.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-19 20:15:30 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vQjwsW1wnuiSnrQTfkgUIOj/zIWySgLztn5HWlj45NS4h5IS3Z/mxEuz3yMmnU9aFjCAzWlwmnI9Aa/Fv5Tydw==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tare2@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-19 16:08:47.370379"], ["current_sign_in_at", "2015-02-19 18:15:31.044981"], ["sign_in_count", 3], ["updated_at", "2015-02-19 18:15:31.047287"], ["id", 1]]
+  [1m[36m (7.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 114ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 100.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:15:31 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:15:33 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.8ms)
+  Rendered photos/_form.html.erb (3.1ms)
+  [1m[35mYoutube Load (0.2ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (5.5ms)
+  Rendered comments/_form.html.erb (6.2ms)
+  Rendered articles/show.html.erb within layouts/application (56.1ms)
+  Rendered devise/menu/_registration_items.html.erb (0.5ms)
+  Rendered devise/menu/_login_tools.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 150.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:16:31 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.8ms)
+  Rendered photos/_form.html.erb (2.0ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (2.0ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered articles/show.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    20: <h2>Add a comment:</h2>
+    21: <%= render 'comments/form' %>
+    22: 
+    23: <%= social_share_button_tag(@post.title) %>
+    24: 
+    25: <%= link_to 'Back', articles_path %>
+    26: <%= link_to 'Edit', edit_article_path(@article) %>
+  app/views/articles/show.html.erb:23:in `_app_views_articles_show_html_erb___285819969824869340_44627780'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.0ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered photos/_form.html.erb (2.0ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (2.0ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered articles/show.html.erb within layouts/application (13.8ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:47 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:16:48 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.3ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered articles/show.html.erb within layouts/application (12.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:15 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered photos/_form.html.erb (8.7ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.2ms)
+  Rendered comments/_form.html.erb (2.0ms)
+  Rendered articles/show.html.erb within layouts/application (19.5ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:17:29 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:18:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:11: syntax error, unexpected ',', expecting ')'
+...are_button_tag(@article.title), :popup => "true" );@output_b...
+...                               ^):
+  app/views/articles/show.html.erb:11: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:18:47 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+<h2>Comments</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: unknown regexp option - h
+unmatched close parenthesis: /h2>
+<%= render @article.comments );@output_buffer.safe_append='
+
+<h2>Photos</
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+<h2>Photos</h2>
+              ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._buffer.append=( render 'photos/form' );@output_buffer.safe_...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...r.append=( render 'photos/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+<h2>Videos</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render @article.youtubes );@output_buffer.safe_append='
+'.freeze;@output_buffer.append=( render 'youtubes/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'youtubes/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+<h2>Add a comment:</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<h2>Add a comment:</h2>
+         ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render 'comments/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'comments/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', articles_path );@output_bu...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_article_path(@article...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: unterminated string meets end of file
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:16: unknown regexp option - h
+  app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:22: unknown regexp options - fr
+  app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:24: unknown regexp options - fr
+  app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: unterminated string meets end of file
+  app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/menu/_registration_items.html.erb (1.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:00 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-19 20:19:01 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 110ms (Views: 108.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:19:03 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+<h2>Comments</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: unknown regexp option - h
+unmatched close parenthesis: /h2>
+<%= render @article.comments );@output_buffer.safe_append='
+
+<h2>Photos</
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+<h2>Photos</h2>
+              ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._buffer.append=( render 'photos/form' );@output_buffer.safe_...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...r.append=( render 'photos/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+<h2>Videos</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render @article.youtubes );@output_buffer.safe_append='
+'.freeze;@output_buffer.append=( render 'youtubes/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'youtubes/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+<h2>Add a comment:</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<h2>Add a comment:</h2>
+         ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render 'comments/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'comments/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', articles_path );@output_bu...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_article_path(@article...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: unterminated string meets end of file
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:16: unknown regexp option - h
+  app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:22: unknown regexp options - fr
+  app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:24: unknown regexp options - fr
+  app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: unterminated string meets end of file
+  app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'
+
+
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:19:04 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+<h2>Comments</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: unknown regexp option - h
+unmatched close parenthesis: /h2>
+<%= render @article.comments );@output_buffer.safe_append='
+
+<h2>Photos</
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+<h2>Photos</h2>
+              ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._buffer.append=( render 'photos/form' );@output_buffer.safe_...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...r.append=( render 'photos/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+<h2>Videos</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render @article.youtubes );@output_buffer.safe_append='
+'.freeze;@output_buffer.append=( render 'youtubes/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'youtubes/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+<h2>Add a comment:</h2>
+ ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<h2>Add a comment:</h2>
+         ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: unknown regexp options - fr
+end pattern with unmatched parenthesis: /h2>
+'.freeze;@output_buffer.append=( render 'comments/m
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+...append=( render 'comments/form' );@output_buffer.safe_append...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', articles_path );@output_bu...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_article_path(@article...
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: unterminated string meets end of file
+/home/ispoonjelly/workspace/blog/app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/articles/show.html.erb:13: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:16: unknown regexp option - h
+  app/views/articles/show.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/articles/show.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:20: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:22: unknown regexp options - fr
+  app/views/articles/show.html.erb:22: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected '<', expecting ')'
+  app/views/articles/show.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.erb:24: unknown regexp options - fr
+  app/views/articles/show.html.erb:24: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/articles/show.html.erb:26: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/articles/show.html.erb:27: unterminated string meets end of file
+  app/views/articles/show.html.erb:27: syntax error, unexpected end-of-input, expecting ')'
+
+
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.5ms)
+  Rendered photos/_form.html.erb (2.0ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (2.2ms)
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered articles/show.html.erb within layouts/application (17.0ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/application-050fc3db87f6f23fb901eadcae0e2145.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:14 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:19:55 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered photos/_form.html.erb (1.2ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (2.2ms)
+  Rendered articles/show.html.erb within layouts/application (11.8ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 247ms (Views: 245.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:55 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:55 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:55 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:56 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.2ms)
+  Rendered photos/_form.html.erb (1.5ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (3.9ms)
+  Rendered articles/show.html.erb within layouts/application (14.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/application-c70427b6dee59b32f97468fef306ba66.css?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:19:57 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.5ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.7ms)
+  Rendered comments/_form.html.erb (1.7ms)
+  Rendered articles/show.html.erb within layouts/application (12.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 248ms (Views: 245.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:24:17 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.0ms)
+  Rendered photos/_form.html.erb (1.6ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.7ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered articles/show.html.erb within layouts/application (14.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 122.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:26:09 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (3.3ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered articles/show.html.erb within layouts/application (15.7ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.2ms)
+Completed 200 OK in 116ms (Views: 114.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:26:19 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.9ms)
+  Rendered photos/_form.html.erb (1.2ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.3ms)
+  Rendered comments/_form.html.erb (2.1ms)
+  Rendered articles/show.html.erb within layouts/application (12.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:26:53 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.6ms)
+  Rendered photos/_form.html.erb (2.7ms)
+  [1m[36mYoutube Load (0.2ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (3.4ms)
+  Rendered comments/_form.html.erb (3.5ms)
+  Rendered articles/show.html.erb within layouts/application (21.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:27:11 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:27:31 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.0ms)
+  Rendered photos/_form.html.erb (1.5ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered articles/show.html.erb within layouts/application (14.5ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 120.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:27:32 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (1.4ms)
+  Rendered photos/_form.html.erb (1.8ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (2.3ms)
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered articles/show.html.erb within layouts/application (15.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 124.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:27:47 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[35mYoutube Load (0.1ms)[0m  SELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (2.2ms)
+  Rendered comments/_form.html.erb (5.4ms)
+  Rendered articles/show.html.erb within layouts/application (17.8ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:01 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:28:02 +0200
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."article_id" = ?  [["article_id", 14]]
+  Rendered photos/_photo.html.erb (0.8ms)
+  Rendered photos/_form.html.erb (1.3ms)
+  [1m[36mYoutube Load (0.1ms)[0m  [1mSELECT "youtubes".* FROM "youtubes" WHERE "youtubes"."article_id" = ?[0m  [["article_id", 14]]
+  Rendered collection (0.0ms)
+  Rendered youtubes/_form.html.erb (1.5ms)
+  Rendered comments/_form.html.erb (1.6ms)
+  Rendered articles/show.html.erb within layouts/application (12.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
