@@ -1,4 +1,5 @@
-class YoutubesController < ApplicationController
+class YoutubesController < BlogController
+
 	def index
 	end
 
@@ -16,6 +17,7 @@ class YoutubesController < ApplicationController
 	end
 
 	private
+	
 	def youtube_params
      params.require(:youtube).permit(:youtube_url)
 	end

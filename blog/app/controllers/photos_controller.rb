@@ -1,4 +1,4 @@
-class PhotosController < ApplicationController
+class PhotosController < BlogController
 	def index
 	end
 	def create

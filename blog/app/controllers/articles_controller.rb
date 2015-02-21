@@ -1,5 +1,4 @@
-class ArticlesController < ApplicationController
-	before_action :authenticate_user!
+class ArticlesController < BlogController
 
 	def index
 		@articles = Article.all.reverse

@@ -1,4 +1,4 @@
-class SubCommentsController < ApplicationController
+class SubCommentsController < BlogController
 	def show
 		@sub_comment = Sub_comment.find(params[:id])
 	end
