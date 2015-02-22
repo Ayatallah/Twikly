@@ -27797,3 +27797,439 @@ Started GET "/assets/application-4827e63591ab66f68db9128c41228acc.js?body=1" for
 
 
 Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-02-19 20:28:47 +0200
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (7.2ms)[0m  DELETE FROM "users"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."id" ASC[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:50:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered devise/menu/_registration_items.html.erb (4.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.7ms)
+Completed 200 OK in 211ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/blog-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/sub_comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/youtubes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/application-983f529a8593a392fdb3b32e205dd276.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/social-share-button-ad9f9afd09d62a3d3526bb518b8f8446.css?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/articles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/blog-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/sub_comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/youtubes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/assets/application-be0f440185a0fa490358d8402ed091e1.js?body=1" for 127.0.0.1 at 2015-02-22 11:50:45 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-02-22 11:50:48 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (4.2ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (25.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 151ms (Views: 129.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:50:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (7.0ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (17.1ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:50:54 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XUEiHNZTAXJ0dWSqJHgou0Uyi4jskE3hDUBlm7+Rzw2f6VSKk1MJMzarx98q/mCuP1nduX7GDaHaKJrFTzHEw==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tare2@gmail.com"]]
+Completed 401 Unauthorized in 8ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XUEiHNZTAXJ0dWSqJHgou0Uyi4jskE3hDUBlm7+Rzw2f6VSKk1MJMzarx98q/mCuP1nduX7GDaHaKJrFTzHEw==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (3.6ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 204ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-02-22 11:50:57 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.6ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (11.4ms)
+  Rendered devise/menu/_registration_items.html.erb (0.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 120ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-02-22 11:51:07 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Pmc6D/CodI+n7FV2QT/T9iwaQF+MmDTiB8HK7n6bzMv8z0yZtah8zuUy9gNPuZvjVnEWbh7OdKLQqTWwjjvHA==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'tare2@gmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "tare2@gmail.com"], ["encrypted_password", "$2a$10$zK0tLt6lrMxO9CaV.NNivuFrZK6.OllEzV6cfqzqPPGWcPhoOQUUK"], ["created_at", "2015-02-22 09:51:07.491809"], ["updated_at", "2015-02-22 09:51:07.491809"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-22 09:51:07.501791"], ["current_sign_in_at", "2015-02-22 09:51:07.501791"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-02-22 09:51:07.502772"], ["id", 2]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:51:07 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered devise/menu/_registration_items.html.erb (1.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'aya@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "aya@gmail.com"], ["encrypted_password", "$2a$10$YblYAgrvoeNAL7OLxp/5EuCOjUYngey/.xXjb356Llo6oI/w8wUZK"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:51:40.831145"], ["updated_at", "2015-02-22 09:51:40.831145"]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:51:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered devise/menu/_registration_items.html.erb (17.8ms)
+  Rendered devise/menu/_login_tools.html.erb (1.0ms)
+Completed 200 OK in 197ms (Views: 188.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-02-22 11:51:50 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nazUvLKuc46igmB9bS8nTUTlQ2zMXrlbj9+mOMYmyfFSpnVm67pzr6eJGvC5FT5tEQzuNAoX4FqMggXFveRJ3g=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:51:50 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered devise/menu/_registration_items.html.erb (3.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:51:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (10.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (30.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.4ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 148ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:51:55 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgOifPs53DKoxBH+uN6Oo7tqB5zo5TRHdBipaKSKFgX7oTHpfS4j8ZDosOzAbnIxdG6UsroHvy7zAZ1q55Ik2g==", "user"=>{"email"=>"aya@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "aya@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-22 09:51:55.765549"], ["current_sign_in_at", "2015-02-22 09:51:55.765549"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-02-22 09:51:55.767017"], ["id", 3]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:51:55 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/menu/_registration_items.html.erb (1.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (7.2ms)[0m  DELETE FROM "users"
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:52:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  Rendered devise/menu/_registration_items.html.erb (4.8ms)
+  Rendered devise/menu/_login_tools.html.erb (0.6ms)
+Completed 200 OK in 186ms (Views: 178.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:52:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (10.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (47.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.2ms)
+Completed 200 OK in 212ms (Views: 194.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:52:30 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b3AgxI/H90W7wLBDuqwbi5DztIEFxOS9Mu9mKFB2/ukWCPyCUBFi2gtr2FpcjVwZSk+4oMMrz2XZbxnKBL3gDg==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tare2@gmail.com"]]
+Completed 401 Unauthorized in 8ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b3AgxI/H90W7wLBDuqwbi5DztIEFxOS9Mu9mKFB2/ukWCPyCUBFi2gtr2FpcjVwZSk+4oMMrz2XZbxnKBL3gDg==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (4.6ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered devise/menu/_registration_items.html.erb (0.2ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 209ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'tare2@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "tare2@gmail.com"], ["encrypted_password", "$2a$10$Lr04IH62eBXa8qgCBkL/Z.oUBVQlzMpcy0mTP8W8dc.hsS1zxNgpq"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.096368"], ["updated_at", "2015-02-22 09:53:51.096368"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'aya@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "aya@gmail.com"], ["encrypted_password", "$2a$10$1WWw4m.keoFHzXw4FtFJ2O.y7rK0DRJ.fRGlmdJyIVBaDWMCEssQe"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.191870"], ["updated_at", "2015-02-22 09:53:51.191870"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'zeer@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "zeer@gmail.com"], ["encrypted_password", "$2a$10$25MFC7bP7mzD5cezbEXpme3aYC3GFlizD3eu.SbcoDbjqGi/r7dbG"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.279398"], ["updated_at", "2015-02-22 09:53:51.279398"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'amy@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "amy@gmail.com"], ["encrypted_password", "$2a$10$DpkbOGgQBv/VQJeFQUoJxenGXHcVCj5r9f0RTveVPIvWZcUYEZSQi"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.367146"], ["updated_at", "2015-02-22 09:53:51.367146"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'karim@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "karim@gmail.com"], ["encrypted_password", "$2a$10$CvvIrBbyoA0HgFv9.UaYt.CUrb9CNkMMyhpYs4DGhjpmvI1gCflTm"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.462323"], ["updated_at", "2015-02-22 09:53:51.462323"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'alfy@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "alfy@gmail.com"], ["encrypted_password", "$2a$10$6CqlpUFOuVy22vDs45.uvOQlfDuCYlhNmcpOmeSvs.hef7q53FA/W"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.556185"], ["updated_at", "2015-02-22 09:53:51.556185"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rana@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "rana@gmail.com"], ["encrypted_password", "$2a$10$KJc8aLXfALm.MddCHIVvqu/3nYv9.yMOsfqz5SZIdWBLD3mEXEn32"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.649815"], ["updated_at", "2015-02-22 09:53:51.649815"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'walid@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "admin", "auth", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "walid@gmail.com"], ["encrypted_password", "$2a$10$GLDybcMfiUi/ZdQhfoPQYu0BhzWGRq5j7PTJn6u6rL5O3LvkzlppK"], ["admin", "t"], ["auth", "t"], ["created_at", "2015-02-22 09:53:51.735275"], ["updated_at", "2015-02-22 09:53:51.735275"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:55:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+  Rendered devise/menu/_registration_items.html.erb (4.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.5ms)
+Completed 200 OK in 191ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:55:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (8.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (41.3ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 193ms (Views: 177.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:55:20 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zVkpLUQyY/lvhz2u2Z8+4O06zYpAP4KMa4n8Kl/8U6kIp8cDJ9PCYv9wNUMc+ohsXNn5H9RzQwVb75pAW1g/lw==", "user"=>{"email"=>"tare2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tare2@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-22 09:55:20.828541"], ["current_sign_in_at", "2015-02-22 09:55:20.828541"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-02-22 09:55:20.830670"], ["id", 4]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:55:20 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered devise/menu/_registration_items.html.erb (1.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-22 11:55:23 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 17ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/index.html.erb:4: syntax error, unexpected ';', expecting ':'
+...w article', new_article_path );@output_buffer.safe_append='
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/index.html.erb:14: syntax error, unexpected keyword_do_cond, expecting end-of-input
+'.freeze;	@articles.each do |article| 
+         	                 ^):
+  app/views/articles/index.html.erb:4: syntax error, unexpected ';', expecting ':'
+  app/views/articles/index.html.erb:14: syntax error, unexpected keyword_do_cond, expecting end-of-input
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-22 11:55:23 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/ispoonjelly/workspace/blog/app/views/articles/index.html.erb:4: syntax error, unexpected ';', expecting ':'
+...w article', new_article_path );@output_buffer.safe_append='
+...                               ^
+/home/ispoonjelly/workspace/blog/app/views/articles/index.html.erb:14: syntax error, unexpected keyword_do_cond, expecting end-of-input
+'.freeze;	@articles.each do |article| 
+         	                 ^):
+  app/views/articles/index.html.erb:4: syntax error, unexpected ';', expecting ':'
+  app/views/articles/index.html.erb:14: syntax error, unexpected keyword_do_cond, expecting end-of-input
+
+
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-22 11:55:43 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 112.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-02-22 11:55:49 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fKzfazf/FNI4pbVkY2p7iR+GDd+GUNynQHpM/RtxJPdnfBK9v4snEPjZk0fw5zEJIwbD7lygtX+S/JwHIxOEow=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-22 11:55:49 +0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-22 11:55:51 +0200
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-22 11:55:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (3.9ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (8.6ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 114ms (Views: 113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-02-22 11:55:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (3.8ms)
+  Rendered /home/ispoonjelly/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (11.9ms)
+  Rendered devise/menu/_registration_items.html.erb (0.3ms)
+  Rendered devise/menu/_login_tools.html.erb (0.2ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-02-22 11:56:04 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KWyOXX5B6RcYOIou0e+1vRsx53W8Q9LzdSKFH+lJpXyi6sUuzG97ZVON+JzUnbeODT0gfRuXxGs2e06H4GafMw==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "test@gmail.com"], ["encrypted_password", "$2a$10$flySYP42AGL3Yxf7H4gxrOqSTwswIXZFuhAU4BhhsGyupyGzEFGmu"], ["created_at", "2015-02-22 09:56:04.799921"], ["updated_at", "2015-02-22 09:56:04.799921"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-02-22 09:56:04.809001"], ["current_sign_in_at", "2015-02-22 09:56:04.809001"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-02-22 09:56:04.810108"], ["id", 12]]
+  [1m[35m (5.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 120ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-02-22 11:56:04 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 12]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+  Rendered devise/menu/_registration_items.html.erb (0.1ms)
+  Rendered devise/menu/_login_tools.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 0.3ms)
