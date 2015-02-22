@@ -35,7 +35,11 @@ Rails.application.routes.draw do
   end
 
   devise_scope :user do
-    get '/edit_acc',  :to => 'users/registration#edit'
+    get '/edit_acc',  :to => 'users/registrations#edit'
+  end
+
+  devise_scope :user do
+    get '/signup',  :to => 'users/registrations#new'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
