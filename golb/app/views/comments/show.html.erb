@@ -1,0 +1,22 @@
+<div id="post_content">
+	<h1 class="title"><%= @comment.body %></h1>
+	<p class="date">
+		<p class="body"><%= @comment.commenter %></p>
+			Submitted <%= time_ago_in_words(@comment.created_at) %> Ago
+			<% if user_signed_in? %>
+			 | <%= link_to 'Back', article_path(@comment.article) %>
+		  <% end %>
+		</p>
+	
+
+
+<div id="comments">
+<h2>Sub Comments</h2>
+<%= render @comment.sub_comments %>
+
+<h2>Add a sub comment:</h2>
+<%= render 'sub_comments/form' %>
+
+
+</div>
+</div>

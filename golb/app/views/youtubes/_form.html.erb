@@ -1,0 +1,9 @@
+<%= form_for([@article,@article.youtubes.build]) do |f| %>
+<p>
+	<%= f.label :Enter_Youtube_Url %>
+	<%= f.text_field :youtube_url %>
+</p>
+<p>
+	<%= f.submit "Add"%>
+</p>
+<% end %>

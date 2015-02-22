@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="sidebar">
+	<ul>
+			<li class="category">Twikly</li>
+		</ul>
+
+		<ul>
+			<li class="category">Website</li>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "Blog", :controller => "/articles" %>
+		</ul>
+
+		<ul>
+			<li class="category">Social</li>
+			<li><a href="https://twitter.com/TwiklyOfficial">Twitter</a></li>
+			<li><a href="http://instagram.com/twiklyofficial">Instagram</a></li>
+			<li><a href="https://facebook.com/TwiklyOfficial">Facebook</a></li>
+			<li><a href="mailto:TwiklyOfficial@gmail.com">Email</a></li>
+		</ul>
+
+		<% if !user_signed_in? %>
+			<p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
+		<% end %>
+	</div>
+
+
+	<div id="main_content">
+    	<div id="header">
+     	 <p>All posts</p>
+ 
+      <div class="buttons">
+        <button class="button"><%= link_to "New Article", new_article_path %></button>
+       <button class="button"><%= link_to "Our Members", :controller  => "/pages", :action => "index" %>
+        <button class="button"><%= render 'devise/menu/login_tools' %>
+        <button class="button"><%= render 'devise/menu/registration_items' %>
+      </div>
+    </div>
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+<%= yield %>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+	<div id="post_content">
+		<h1 class="title"><%= @article.title %></h1>
+		<p class="date">
+			Submitted <%= time_ago_in_words(@article.created_at) %> Ago
+			<% if user_signed_in? %>
+			| <%= link_to 'Edit', edit_article_path(@article) %> |
+			  <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
+		  <% end %>
+		</p>
+		<p class="body"><%= @article.text %></p>
+
+		<div id="comments">
+			<h2>Photos</h2>
+			<%= render @article.photos %>
+			<%= render 'photos/form' %>
+
+			<h2>Videos</h2>
+			<%= render @article.youtubes %>
+			<%= render 'youtubes/form' %>
+
+			<h2>Share on Facebook or G+</h2>
+			<%= social_share_button_tag(@article.title, :popup => "true") %>
+			<h2><%= @article.comments.count %> Comments</h2>
+			<%= render @article.comments %>
+
+			<h3>Add a comment:</h3>
+			<%= render "comments/form" %>
+
+			
+
+		</div>
+	</div>
