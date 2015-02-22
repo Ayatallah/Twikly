@@ -32,14 +32,15 @@
 		<% end %>
 	</div>
 
-
 	<div id="main_content">
     	<div id="header">
      	 <p>All posts</p>
  
       <div class="buttons">
-        <button class="button"><%= link_to "New Article", new_article_path %></button>
-       <button class="button"><%= link_to "Our Members", :controller  => "/pages", :action => "index" %>
+        <% if current_user.try(:auth?) %>
+          <button class="button"><%= link_to "New Article", new_article_path %>
+        <% end %>
+        <button class="button"><%= link_to "Our Members", :controller  => "/pages", :action => "index" %>
         <button class="button"><%= render 'devise/menu/login_tools' %>
         <button class="button"><%= render 'devise/menu/registration_items' %>
       </div>

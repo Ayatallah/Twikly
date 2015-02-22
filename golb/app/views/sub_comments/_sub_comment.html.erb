@@ -5,7 +5,7 @@
     <p class="comment_time"><%= time_ago_in_words(sub_comment.created_at) %> Ago</p>
   </div>
 
-<% if user_signed_in? %>
+<% if current_user.try(:admin?) %>
 <p>
 	<%= link_to 'Delete Sub comment', [sub_comment.comment, sub_comment],
 	    method: :delete,

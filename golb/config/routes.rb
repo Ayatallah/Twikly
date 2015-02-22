@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
 
-
-  
-
   devise_for :users
   root "welcome#index"
-  get 'pages/index'
-
+  get 'pages', to: 'pages#index'
   
   get 'pages/atarek'
   get 'pages/aya'
@@ -16,10 +12,7 @@ Rails.application.routes.draw do
   get 'pages/karim'
   get 'pages/rana'
   get 'pages/amy'
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
+  
   resources :articles do
     resources :youtubes
   end
@@ -33,9 +26,22 @@ Rails.application.routes.draw do
      resources :sub_comments
   end
   
+  devise_scope :user do
+    get '/logout',  :to => 'users/sessions#destroy'
+  end
 
- 
+  devise_scope :user do
+    get '/login',  :to => 'users/sessions#create'
+  end
 
+  devise_scope :user do
+    get '/edit_acc',  :to => 'users/registration#edit'
+  end
+
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
