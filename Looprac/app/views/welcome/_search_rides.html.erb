@@ -1,0 +1,26 @@
+<div class="container" id="main-container">
+	<br>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<form class="form-inline">
+				<div class="input-group">
+					<span class="input-group-addon glyphicon glyphicon-arrow-left" id="from"></span>
+					<input type="text" class="form-control" placeholder="from..">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon glyphicon glyphicon-arrow-right" id="to"></span>
+					<input type="text" class="form-control" placeholder="to..">
+				</div>
+			</form>
+		</div>
+		<div class="col-md-6"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-4">
+			<%= link_to '/welcome/results', class: 'btn btn-success btn-block custom-text' do%>
+  				<i class="glyphicon glyphicon-search"></i>Search
+			<% end %>
+		</div>	
+	</div>
+</div>

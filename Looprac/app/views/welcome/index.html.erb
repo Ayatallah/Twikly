@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+</head>
+<body class="landing">
+	<%= render 'shared/breaks' %>
+
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<ul class="nav nav-tabs" role="tablist" id="myTab">
+				<li role="Presentation" class="active"><a href="#rides" role="tab" data-toggle="tab" class="custom-text">Rides</a></li>
+				<li role="Presentation"><a href="#users" role="tab" data-toggle="tab" class="custom-text">Users</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="tab-content">
+		<div class="tab-pane active" id="rides">
+			<%= render 'search_rides' %>
+		</div>
+		<div class="tab-pane" id="users">
+			<%= render 'search_users' %>
+		</div>
+	</div>
+</body>
+</html>
