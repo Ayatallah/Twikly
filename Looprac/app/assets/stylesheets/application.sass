@@ -13,10 +13,24 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
+$main-color: #0cace7
+$success-color: #2ecc4c
+$error-color: #e94331
+$warning-color: #f39c12
+$other-color: #c4c4c4
+$text-color: #474f52
+
 body
 
 body.landing
-	background-color: #B8B8B8
+	background-color: $other-color
+
+.panel-heading
+	background-color: $main-color
+
+.title-bar
+	color: $text-color
+	background-color: $main-color
 
 .default-jumbotron
 	background-color: #B8B8B8
@@ -32,8 +46,9 @@ body.landing
 	margin-right: auto
 	float: none
 
-.footer
-	background-color: #000000
+.nav-color
+	background-color: grey
+
 
 .col-bot
 	vertical-align: bottom
@@ -44,9 +59,6 @@ body.landing
 	min-height: 100vh
 	diplay: flex
 	align-items: center
-
-.navbar-green
-	*background-color: #000000
 
 .nav-img
 	width: 80px
