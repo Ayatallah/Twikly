@@ -1,0 +1,994 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-08 12:43:45 +0200
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (15.1ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (44.8ms)
+  [1m[36m (103.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (98.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTodos (20150227112237)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "todos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150227112237"]]
+  [1m[35m (92.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "shopping"], ["notes", "tomato, tomato, tomato"], ["created_at", "2015-03-08 10:44:08.356735"], ["updated_at", "2015-03-08 10:44:08.356735"]]
+  [1m[35m (94.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "todos" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "steal the bike"], ["created_at", "2015-03-08 10:44:08.454785"], ["updated_at", "2015-03-08 10:44:08.454785"]]
+  [1m[36m (95.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Get to Diamond1"], ["notes", "pick orianna -> win"], ["created_at", "2015-03-08 10:44:08.554091"], ["updated_at", "2015-03-08 10:44:08.554091"]]
+  [1m[35m (99.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "google maps api"], ["notes", "you have to"], ["created_at", "2015-03-08 10:44:08.655688"], ["updated_at", "2015-03-08 10:44:08.655688"]]
+  [1m[36m (96.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JS!"], ["notes", "just do it"], ["created_at", "2015-03-08 10:44:08.756073"], ["updated_at", "2015-03-08 10:44:08.756073"]]
+  [1m[35m (96.5ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-08 12:44:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.3ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+WARNING on line 16 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 3485ms (Views: 3478.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/application-3bf433fcf398a3d433bd87d291f4a688.css?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/application-41fc57bc3f793e1754fc89d64c053cf6.js?body=1" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-08 12:44:34 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-4c18eb6f51df3274f7d02dcd79043b73.woff" for 127.0.0.1 at 2015-03-08 12:44:35 +0200
+
+
+Started GET "/welcome/Registration" for 127.0.0.1 at 2015-03-08 12:45:02 +0200
+Processing by WelcomeController#Registration as HTML
+  Rendered welcome/Registration.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Profile" for 127.0.0.1 at 2015-03-08 12:45:14 +0200
+Processing by WelcomeController#Profile as HTML
+  Rendered welcome/Profile.html.erb within layouts/application (0.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-08 12:45:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "shopping"], ["notes", "tomato, tomato, tomato"], ["created_at", "2015-03-09 18:03:20.655804"], ["updated_at", "2015-03-09 18:03:20.655804"]]
+  [1m[35m (98.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "todos" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "steal the bike"], ["created_at", "2015-03-09 18:03:20.783146"], ["updated_at", "2015-03-09 18:03:20.783146"]]
+  [1m[36m (97.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Get to Diamond1"], ["notes", "pick orianna -> win"], ["created_at", "2015-03-09 18:03:20.884741"], ["updated_at", "2015-03-09 18:03:20.884741"]]
+  [1m[35m (96.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "google maps api"], ["notes", "you have to"], ["created_at", "2015-03-09 18:03:20.985394"], ["updated_at", "2015-03-09 18:03:20.985394"]]
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "todos" ("title", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JS!"], ["notes", "just do it"], ["created_at", "2015-03-09 18:03:21.085858"], ["updated_at", "2015-03-09 18:03:21.085858"]]
+  [1m[35m (97.6ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 20:03:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.3ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (5.2ms)
+WARNING on line 23 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 79 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (0.4ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 3588ms (Views: 3574.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/application-2d7bc2443850dfe898016b5fb54e1c28.css?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/application-41fc57bc3f793e1754fc89d64c053cf6.js?body=1" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-09 20:03:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20150309182457)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150309182457"]]
+  [1m[36m (99.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 20:47:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navigation.html.erb (1.1ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 423ms (Views: 415.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 20:47:01 +0200
+
+
+Started GET "/assets/application-bff46f7ed587fbfd55e8f5d369fcbe4a.js?body=1" for 127.0.0.1 at 2015-03-09 20:47:01 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 20:47:01 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 20:47:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 20:50:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navigation.html.erb (1.0ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 212ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 20:50:55 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 20:50:55 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 20:50:56 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navigation.html.erb (0.7ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-03-09 20:56:57 +0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (75.9ms)
+  Rendered posts/new.html.erb within layouts/application (76.8ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 164.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 20:57:01 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-03-09 20:57:28 +0200
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.2ms)
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-03-09 20:58:14 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"me02esfRl8+9pWCS/nb9vRujNHV5Xc42hIabQPndhHsblKpGW1A8A3U5ud36FmpllHC/Krjg0V8rpYYrNzYjPg==", "post"=>{"title"=>"Test", "text"=>"Hello, This is the first LooPrac Post."}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered posts/_form.html.erb (3.3ms)
+  Rendered posts/new.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 97ms (Views: 94.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 20:58:14 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 20:58:14 +0200
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-03-09 20:58:23 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UZNlyt9WU8GXL5bl0fbzDpziwAiX99xsDHcYScHTAfTT6vn2Q9f4DV+zT6rVlmTWEzFLV1ZKwwWjVAUiDzimsQ==", "post"=>{"title"=>"Test ", "text"=>"Hello, This is the first LooPrac Post."}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Test "], ["text", "Hello, This is the first LooPrac Post."], ["created_at", "2015-03-09 18:58:23.233420"], ["updated_at", "2015-03-09 18:58:23.233420"]]
+  [1m[35m (176.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 187ms (ActiveRecord: 176.7ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 20:58:23 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 83.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 20:58:23 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 20:58:23 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:00:03 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:01:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.5ms)
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (1.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 215ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 21:01:52 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 21:01:52 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:01:54 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (31.1ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined local variable or method `welcome_path' for #<#<Class:0x007f0191d87b30>:0x007f0191d842c8>):
+    20:   <% end %>
+    21: </table>
+    22: 
+    23: <%= link_to 'Back', welcome_path %>
+  app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__3272937883993571607_69822359328760'
+
+
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.7ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (37.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:01:54 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `welcome_path' for #<#<Class:0x007f0191d87b30>:0x007f01a19e9dd8>):
+    20:   <% end %>
+    21: </table>
+    22: 
+    23: <%= link_to 'Back', welcome_path %>
+  app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__3272937883993571607_69822491609620'
+
+
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.6ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:02:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (1.1ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 205ms (Views: 198.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 21:02:24 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 21:02:24 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:02:26 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined local variable or method `welcome' for #<#<Class:0x007f8c35d8bc88>:0x007f8c35d88420>):
+    20:   <% end %>
+    21: </table>
+    22: 
+    23: <%= link_to 'Back', welcome %>
+  app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__2705526739258250290_70120087804080'
+
+
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.9ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (26.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:02:26 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `welcome' for #<#<Class:0x007f8c35d8bc88>:0x007f8c48075c48>):
+    20:   <% end %>
+    21: </table>
+    22: 
+    23: <%= link_to 'Back', welcome %>
+  app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__2705526739258250290_70120240281200'
+
+
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.8ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.2ms)
+  Rendered /home/ayatallah/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (27.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:22:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+WARNING on line 27 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 83 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (1.0ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 2239ms (Views: 2232.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:22:29 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.1ms)
+  Rendered welcome/_search_rides.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-40c4529d26d85a18efa11db872f14d58.css?body=1" for 127.0.0.1 at 2015-03-09 21:22:29 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 21:22:29 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 21:22:29 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:22:30 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 138.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 21:22:32 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 114.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:33:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navigation.html.erb (1.1ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 231ms (Views: 223.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 21:33:38 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 21:33:38 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:33:40 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+  Rendered shared/_navigation.html.erb (0.7ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 113ms (Views: 110.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 21:33:42 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 98.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 21:45:01 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.3ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 491ms (Views: 483.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-09 21:45:02 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-09 21:45:02 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 21:45:02 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 21:45:02 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 21:45:05 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 104ms (Views: 97.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 21:45:07 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 110.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:00:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.4ms)
+WARNING on line 25 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 81 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (0.9ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 2237ms (Views: 2229.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-1501dd1ab89b6285dca00cc203fbebcf.css?body=1" for 127.0.0.1 at 2015-03-09 22:00:19 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 22:00:19 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 22:00:19 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 22:00:21 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (0.7ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 139.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 22:00:23 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 108.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:00:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.5ms)
+WARNING on line 25 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 81 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (1.1ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 2236ms (Views: 2227.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:01:02 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.0ms)
+  Rendered welcome/_search_rides.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 134.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-695bf5b84f3644e3a82d974bae1c3169.css?body=1" for 127.0.0.1 at 2015-03-09 22:01:02 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 22:01:02 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 22:01:02 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 22:01:03 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 145ms (Views: 138.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 22:01:04 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.5ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 112.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:06:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 232ms (Views: 224.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 22:06:17 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 22:06:17 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 22:06:18 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 22:06:20 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 108.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:37:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+WARNING on line 27 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 83 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (1.0ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 2296ms (Views: 2288.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:37:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.1ms)
+  Rendered welcome/_search_rides.html.erb (0.3ms)
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f2e0f6a187c1ee123eb01cddddebc780.css?body=1" for 127.0.0.1 at 2015-03-09 22:37:03 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 22:37:03 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 22:37:03 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 22:37:04 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navigation.html.erb (0.9ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 147ms (Views: 144.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 22:37:06 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 121.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:37:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+WARNING on line 26 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 82 of /home/ayatallah/Desktop/Github/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (1.0ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 2400ms (Views: 2392.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 22:37:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.0ms)
+  Rendered welcome/_search_rides.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 136ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e37d8dfc266ec25ac3c68b53f07e62d3.css?body=1" for 127.0.0.1 at 2015-03-09 22:37:51 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-09 22:37:51 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-09 22:37:51 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-09 22:37:52 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navigation.html.erb (0.8ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 141ms (Views: 138.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-09 22:37:54 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 127ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sprites/social-share-button-2f1744f04bcaba404a2cd53f1a50c452.png" for 127.0.0.1 at 2015-03-09 22:37:54 +0200
