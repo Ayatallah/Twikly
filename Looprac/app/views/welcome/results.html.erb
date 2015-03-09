@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body class="landing">
+	<div class="container" id="main-container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="narvbar-header">
+					<a class="navbar-brand" href="#">
+						<span class="glyphicon glyphicon-search"></span>
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<%= link_to 'Search Again','/', class: 'btn btn-block'%>
+					</li>
+					<li>
+						<%= link_to 'Advanced Search','#', class: 'btn btn-block'%>
+					</li>
+
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sort By <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Reputation</a></li>
+							<li><a href="#">Availability</a></li>
+							<li><a href="#">Distance</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Reset Sort</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="jumbotron">
+			<h1>Search Results</h1>
+			<%= render 'shared/breaks' %>
+			<%= render 'shared/breaks' %>
+		</div>
+
+		<nav class="col-sm-12 col-sm-offset-4">
+			<ul class="pagination">
+			    <li>
+			      <a href="#" aria-label="Previous">
+			        <span class="glyphicon glyphicon-arrow-left"></span> Older
+			      </a>
+				</li>
+				<li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			    	<a href="#" aria-label="Previous">
+			       	 	Newer <span class="glyphicon glyphicon-arrow-right"></span> 
+			      </a>
+			    </li>
+  			</ul>
+		</nav>
+
+	</div>
+</body>
+</html>

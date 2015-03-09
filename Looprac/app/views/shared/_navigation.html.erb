@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default nav-color" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="/"><img src="/assets/looprac1.png" class="nav-img"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    	
+      <ul class="nav navbar-nav navbar-right">
+        <div class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="inputemail">Email</label>
+						<input type="text" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="inputpw">Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">Remember me
+						</label>
+					</div>
+					<div class="btn-group" role="group">
+						<%= link_to 'Login', '/welcome/Profile', class: 'btn btn-default btn-sm navbar-btn', id: "signin" %>
+						<%= link_to 'Signup', '/welcome/Registration', class: 'btn btn-default btn-sm navbar-btn', id: "signup" %>
+
+					</div>
+				</div>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    		<li><a href="#">Blog</a></li>	
+    	</ul>
+    </div>
+  </div>
+</nav>
