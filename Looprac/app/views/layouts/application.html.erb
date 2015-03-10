@@ -11,11 +11,21 @@
 <body>
 	<div class="container-fluid">
 		<div>
-			<%= render 'shared/navigation' %>
+
+			<% if user_signed_in? %>
 			<%= render 'shared/navigation_signed_in' %>
+			<% else %>
+			<%= render 'shared/navigation' %>
+			<% end %>
 
 		</div>
 		<div>
+			<% if notice %>
+ 		 		<p class="alert alert-success"><%= notice %></p>
+			<% end %>
+			<% if alert %>
+  				<p class="alert alert-danger"><%= alert %></p>
+			<% end %>
 			<%= yield %>
 		</div>
 		<div>
