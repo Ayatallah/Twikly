@@ -7,6 +7,7 @@
         <span class="icon-bar"></span> 
       </button>
       <a class="navbar-brand" href="/"><img src="/assets/looprac1.png" class="nav-img"></a>
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     	
@@ -26,8 +27,8 @@
 						</label>
 					</div>
 					<div class="btn-group" role="group">
-						<%= link_to 'Login', '/welcome/Profile', class: 'btn btn-default btn-sm navbar-btn', id: "signin" %>
-						<%= link_to 'Signup', '/welcome/Registration', class: 'btn btn-default btn-sm navbar-btn', id: "signup" %>
+						<%= link_to 'Login', new_user_session_path, class: 'btn btn-default btn-sm navbar-btn', id: "signin" %>
+						<%= link_to 'Signup', new_user_registration_path, class: 'btn btn-default btn-sm navbar-btn', id: "signup" %>
 
 					</div>
 				</div>

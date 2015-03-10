@@ -8,6 +8,20 @@
   <%= @post.text %>
 </p>
 
+  <%= link_to like_post_path(@post), class: "like", method: :put do%>
+    <button type="button" class="btn btn-info" aria-label="Left Align">
+    <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+    <span class="badge"><%= @post.get_upvotes.size %></span>
+  </button>
+  <% end %>
+      
+         <%=link_to unlike_post_path(@post), class: "like", method: :put do%>
+    <button type="button" class="btn btn-info" aria-label="Left Align">
+    <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
+    <span class="badge"><%= @post.get_downvotes.size %></span>
+  </button>
+  <% end %>
+
 	<h4>Share on Twitter or Facebook or G+</h4>
 		<%= social_share_button_tag(@post.title, :popup => "true") %>
 

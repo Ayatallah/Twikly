@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :todos
-  resources :posts
-
+  resources :posts do
+    member do
+      put "like" => "posts#upvote"
+       put "unlike" => "posts#downvote"
+    end
+  end
   root 'welcome#index'
 
   get "welcome/Registration"
