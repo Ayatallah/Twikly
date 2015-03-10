@@ -7,6 +7,20 @@ Rails.application.routes.draw do
        put "unlike" => "posts#downvote"
     end
   end
+
+  resources :posts do
+    resources :comments
+  end
+
+resources :users do
+  resources :comments
+end
+
+
+resources :users do
+  resources :posts
+end
+
   root 'welcome#index'
 
   get "welcome/Registration"
