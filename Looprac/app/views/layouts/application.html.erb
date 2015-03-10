@@ -11,8 +11,12 @@
 <body>
 	<div class="container-fluid">
 		<div>
-			<%= render 'shared/navigation' %>
+
+			<% if user_signed_in? %>
 			<%= render 'shared/navigation_signed_in' %>
+			<% else %>
+			<%= render 'shared/navigation' %>
+			<% end %>
 
 		</div>
 		<div>

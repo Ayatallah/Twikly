@@ -1856,3 +1856,374 @@ Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 05:08:14 +0200
 
 
 Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 05:08:14 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 05:12:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (17.4ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 406ms (Views: 393.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 05:12:41 +0200
+
+
+Started GET "/welcome/Profile" for 127.0.0.1 at 2015-03-10 05:12:50 +0200
+Processing by WelcomeController#Profile as HTML
+  Rendered welcome/Profile.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 05:12:55 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (46.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 215ms (Views: 203.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 05:12:56 +0200
+
+
+Started POST "/users" for 127.0.0.1 at 2015-03-10 05:13:11 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jLSUUiujHY9JVceiErenMXxE+n4le8PUpDXFZ9zMUIg7PmlGtGsOynxcanF7I2tm5XJUWMPGnKsz02Ihg3WA5A==", "user"=>{"username"=>"hamada", "email"=>"Alfy@ilovetwikly.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: password_confirmation
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'alfy@ilovetwikly.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 278ms (Views: 151.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 05:13:12 +0200
+
+
+Started POST "/users" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N5dczCF6TU4tuqwjtY6gcJIrkoXQZtoTESmNGzqo/0iAHaHYvrJeCxizAfDcGmwnCx08ozbbhWyGzypdZREvJA==", "user"=>{"username"=>"hamada", "email"=>"alfy@student.guc.edu.eg", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: password_confirmation
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'alfy@student.guc.edu.eg' LIMIT 1
+  [1m[36mSQL (10.3ms)[0m  [1mINSERT INTO "users" ("username", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "hamada"], ["email", "alfy@student.guc.edu.eg"], ["encrypted_password", "$2a$10$hZ2FqAosqnaWd9F6SyPVfe6isxEZKwNAjH5XTaCx2faHyVreCOccK"], ["created_at", "2015-03-10 03:13:28.352139"], ["updated_at", "2015-03-10 03:13:28.352139"]]
+  [1m[35m (110.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-03-10 03:13:28.475676"], ["current_sign_in_at", "2015-03-10 03:13:28.475676"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-03-10 03:13:28.478320"], ["id", 1]]
+  [1m[36m (102.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 357ms (ActiveRecord: 223.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.0ms)
+  Rendered welcome/_search_rides.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 166ms (Views: 164.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:28 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 05:13:29 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 05:13:29 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 05:13:29 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 05:13:29 +0200
