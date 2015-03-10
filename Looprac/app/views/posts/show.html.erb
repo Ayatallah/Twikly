@@ -1,18 +1,39 @@
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @post.text %>
-</p>
-<p>
-  <strong>User:</strong>
-  <%= @post.user.username %>
-</p>
+ <div class="container">
+     <div class="col-lg-8">
 
+      <h1>
+        <%= @post.title %>
+      </h1>
  
+      <p class="lead">
+      by  <%= @post.user.username %>
+      </p>
+
+      <hr>
+
+      <p class="date"><span class="glyphicon glyphicon-time"></span><%= @post.created_at.strftime(" %B %d, %Y") %></p>
+
+      <hr>
+      <p class="lead">
+        <%= @post.text %>
+      </p>
+
+      <hr>
+        <%= render 'comments/form' %>
+      <hr>
+
+  <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Start Bootstrap
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+ <hr>
 
   <%= link_to like_post_path(@post), class: "like", method: :put do%>
     <button type="button" class="btn btn-info" aria-label="Left Align">
@@ -21,22 +42,19 @@
   </button>
   <% end %>
       
-         <%=link_to unlike_post_path(@post), class: "like", method: :put do%>
+  <%=link_to unlike_post_path(@post), class: "like", method: :put do%>
     <button type="button" class="btn btn-info" aria-label="Left Align">
     <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
     <span class="badge"><%= @post.get_downvotes.size %></span>
   </button>
   <% end %>
+  <hr>
+    <h4>Share on Twitter or Facebook or G+</h4>
+        <%= social_share_button_tag(@post.title, :popup => "true") %>
+  <hr>
 
-	<h4>Share on Twitter or Facebook or G+</h4>
-		<%= social_share_button_tag(@post.title, :popup => "true") %>
+<button type="button" class="btn btn-default"><%= link_to 'Back', posts_path %></button>
+<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button>
 
-<h2>Comments</h2>
-<%= render @post.comments %>
- 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
- 
-
-<%= link_to 'Back', posts_path %>
-<%= link_to 'Edit', edit_post_path(@post) %>
+</div>
+</div>

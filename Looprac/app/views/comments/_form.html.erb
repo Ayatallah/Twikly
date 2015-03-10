@@ -1,10 +1,10 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
+<div class="well">
+	<h4>Leave a Comment:</h4>
+		<%= form_for([@post, @post.comments.build]) do |f| %>
   
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit "Leave Comment"%>
-  </p>
-<% end %>
+  		<div class="form-group">
+    	<%= f.text_area :body, rows: 3, class: 'form-control' %>
+    	</div>
+    		<%= f.submit "Submit", class: "btn btn-primary", type: "submit" %>
+			<% end %>
+</div>
