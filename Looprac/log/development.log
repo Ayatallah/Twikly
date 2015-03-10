@@ -1031,3 +1031,586 @@ Processing by PostsController#show as HTML
   Rendered shared/_navigation_signed_in.html.erb (0.1ms)
   Rendered shared/_footer.html.erb (0.0ms)
 Completed 200 OK in 113ms (Views: 102.3ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150310024152)
+  [1m[35m (0.1ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/alfy/workspace/Twikly/Looprac/db/migrate/20150310024152_devise_create_users.rb:34)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150310024152"]]
+  [1m[36m (100.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 04:42:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+WARNING on line 26 of /home/alfy/workspace/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+WARNING on line 82 of /home/alfy/workspace/Twikly/Looprac/app/assets/stylesheets/application.sass:
+This selector doesn't have any properties and will not be rendered.
+
+  Rendered shared/_navigation.html.erb (1.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 4283ms (Views: 4274.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 04:42:17 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 04:42:20 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (28.6ms)
+  Rendered shared/_navigation.html.erb (2.9ms)
+Completed 500 Internal Server Error in 206ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"devise/posts"}):
+    33: 				</div>
+    34:       </ul>
+    35:       <ul class="nav navbar-nav navbar-right">
+    36:     		<li> <%= link_to 'Blog', controller: 'posts' %></li>	
+    37:     	</ul>
+    38:     </div>
+    39:   </div>
+  app/views/shared/_navigation.html.erb:36:in `_app_views_shared__navigation_html_erb___3692151314626630824_69947203379040'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___74522971112200476_69947201248440'
+
+
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.9ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.1ms)
+  Rendered welcome/_search_rides.html.erb (0.2ms)
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navigation.html.erb (0.7ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 04:46:23 +0200
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-10 04:46:25 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.7ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 156ms (Views: 150.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-10 04:46:28 +0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 134.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-10 04:46:31 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 138.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 04:46:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.5ms)
+  Rendered welcome/_search_rides.html.erb (0.8ms)
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 143ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Registration" for 127.0.0.1 at 2015-03-10 04:46:39 +0200
+Processing by WelcomeController#Registration as HTML
+  Rendered welcome/Registration.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 145ms (Views: 144.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Profile" for 127.0.0.1 at 2015-03-10 04:46:45 +0200
+Processing by WelcomeController#Profile as HTML
+  Rendered welcome/Profile.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Registration" for 127.0.0.1 at 2015-03-10 04:46:51 +0200
+Processing by WelcomeController#Registration as HTML
+  Rendered welcome/Registration.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 04:47:25 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.1ms)
+  Rendered welcome/_search_rides.html.erb (0.1ms)
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 04:48:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (43.0ms)
+  Rendered shared/_navigation.html.erb (3.1ms)
+Completed 500 Internal Server Error in 322ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"devise/posts"}):
+    33: 				</div>
+    34:       </ul>
+    35:       <ul class="nav navbar-nav navbar-right">
+    36:     		<li> <%= link_to 'Blog', controller: 'posts' %></li>	
+    37:     	</ul>
+    38:     </div>
+    39:   </div>
+  app/views/shared/_navigation.html.erb:36:in `_app_views_shared__navigation_html_erb___3531130172173101016_69938161307120'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1816566686687443097_69938008141200'
+
+
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.8ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.7ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (11.9ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (24.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 04:48:29 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navigation.html.erb (1.4ms)
+Completed 500 Internal Server Error in 138ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"devise/posts"}):
+    33: 				</div>
+    34:       </ul>
+    35:       <ul class="nav navbar-nav navbar-right">
+    36:     		<li> <%= link_to 'Blog', controller: 'posts' %></li>	
+    37:     	</ul>
+    38:     </div>
+    39:   </div>
+  app/views/shared/_navigation.html.erb:36:in `_app_views_shared__navigation_html_erb___3531130172173101016_69938161307120'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1816566686687443097_69938008141200'
+
+
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.6ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (11.0ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (25.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 04:48:30 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.7ms)
+  Rendered shared/_navigation.html.erb (1.5ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"devise/posts"}):
+    33: 				</div>
+    34:       </ul>
+    35:       <ul class="nav navbar-nav navbar-right">
+    36:     		<li> <%= link_to 'Blog', controller: 'posts' %></li>	
+    37:     	</ul>
+    38:     </div>
+    39:   </div>
+  app/views/shared/_navigation.html.erb:36:in `_app_views_shared__navigation_html_erb___3531130172173101016_69938161307120'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1816566686687443097_69938008141200'
+
+
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.0ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /home/alfy/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (24.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-10 04:48:50 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 04:48:51 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 04:48:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendered shared/_breaks.html.erb (0.2ms)
+  Rendered welcome/_search_rides.html.erb (0.4ms)
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 144ms (Views: 143.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+  Rendered shared/_navigation_signed_in.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 145ms (Views: 139.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-ca97179078fc752616b957619d35412e.css?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/affix-31984abe1036c1c2f684af192191ce9f.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/alert-7c03e11fecf6b3ef100f76ae4f08586e.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/button-98bba85be4dcdd597554e0b7ce8e33a2.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/carousel-93f34f850a932957c93b7605c79faf45.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/collapse-7a82a3d4fb154ded3d2702465e21ca00.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/dropdown-65c3929585250221f53bae696936ed44.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/tab-a90a1841af8c1eae12bfa5283a8093b0.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/transition-9e4de96204f41141474e9dbb59570af9.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy-e550695030be1d627d1ba91b14792316.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/modal-ce380b9327d2cf6c826d8df818ea48a1.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/tooltip-4d90d4ee015d2df34a7696864b2ea83c.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap/popover-5a060f876311e7fcb18f35058070de5a.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/tab-cf2212e7d4d4461aff134daaf4cfe222.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/bootstrap-sprockets-00b1738c651720f44abc4bbf70bedb3e.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/social-share-button-9af7f557d2be296807238965fb21f8f0.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:03 +0200
+
+
+Started GET "/assets/application-69312fb1d8ca4cb585b02c0736af588d.js?body=1" for 127.0.0.1 at 2015-03-10 04:49:04 +0200
+
+
+Started GET "/assets/looprac1.png" for 127.0.0.1 at 2015-03-10 04:49:04 +0200
+
+
+Started GET "/assets/fbdefault.jpg" for 127.0.0.1 at 2015-03-10 04:49:04 +0200
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-3b21d33cc4addb2ebfe7f625dad8559b.woff2" for 127.0.0.1 at 2015-03-10 04:49:04 +0200
