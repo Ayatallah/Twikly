@@ -11,7 +11,8 @@
 
       <hr>
 
-      <p class="date"><span class="glyphicon glyphicon-time"></span><%= @post.created_at.strftime(" %B %d, %Y") %></p>
+      <p class="date"><span class="glyphicon glyphicon-time"></span><%= @post.created_at.strftime(" %B %d, %Y") %>
+      </p>
 
       <hr>
       <p class="lead">
@@ -19,7 +20,7 @@
       </p>
 
       <hr>
-      <%= render 'comments/comment' %>
+        <%= render 'comments/comment' %>
       <hr>
         <%= render 'comments/form' %>
       <hr>

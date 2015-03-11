@@ -1,14 +1,17 @@
-<div class="media">
-	<div class="media-body">
+<% @post.comments.each do |comment| %>
+	<div class="media">
+		<div class="media-body">
 		<h4 class="media-heading">
-			<% @post.comments.each do |comment| %>
-			<%= comment.user.username %>
-  			<small><%= comment.created_at.strftime("%-d %B, %Y at %H:%M") %>
+			<%= comment.user.username %> 
+				<small><%= comment.created_at.strftime("%-d %B, %Y at %H:%M") %></small>
   		</h4>
   		<%= comment.body %>
-        	<%= link_to 'Destroy', [comment.post, comment],
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %>
-              <% end %>
-          </div>
-      </div>
+  	</div>
+  	<p>
+  		</div>
+    	<%= link_to 'Destroy', [comment.post, comment],
+           		method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+    </p>
+<% end %>
+
