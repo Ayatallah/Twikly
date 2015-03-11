@@ -13,19 +13,6 @@
     	
       <ul class="nav navbar-nav navbar-right">
         <div class="form-inline">
-					<div class="form-group">
-						<label class="sr-only" for="inputemail">Email</label>
-						<input type="text" class="form-control" id="email" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label class="sr-only" for="inputpw">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Password">
-					</div>
-					<div class="checkbox">
-						<label>
-							<input type="checkbox">Remember me
-						</label>
-					</div>
 					<div class="btn-group" role="group">
 						<%= link_to 'Login', new_user_session_path, class: 'btn btn-default btn-sm navbar-btn', id: "signin" %>
 						<%= link_to 'Signup', new_user_registration_path, class: 'btn btn-default btn-sm navbar-btn', id: "signup" %>
