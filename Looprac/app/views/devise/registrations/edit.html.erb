@@ -1,52 +1,60 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
-<%= devise_error_messages! %>
-
-<div class="form-group">
-    <%= f.label :username, class: 'col-sm-2 control-label'  %>
-    <div class="col-sm-6">
-        <%= f.text_field :username, autofocus: true, class: 'form-control'  %>
+<div class="container log-in">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Edit <%= resource_name.to_s.humanize %></h2>
     </div>
+    <div class="panel-body">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="form-group">
+          <%= f.label :username, class: 'col-sm-2 control-label'  %>
+          <div class="col-sm-6">
+              <%= f.text_field :username, autofocus: true, class: 'form-control'  %>
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <%= f.label :email, class: 'col-sm-2 control-label'  %>
+          <div class="col-sm-6">
+              <%= f.email_field :email, class: 'form-control'  %>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <%= f.label :new_password, class: 'col-sm-2 control-label'  %>
+          <div class="col-sm-6">
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder:"Leave blank if you don't want to change it"  %>
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <%= f.label :password_confirmation, class: 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder:"Confirm your new password"  %>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <%= f.label :current_password, class: 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+              <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder:"Enter your current password to confirm your changes" %>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-6">
+              <%= f.submit "Update", class: "btn btn-primary" %>
+              <%= link_to "Back", :back , class: "btn btn-primary"%>
+          </div>
+      </div>
+      <% end %>
+      <div class="center">
+      <p>Do you want to leave us ? <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger btn-xs' %></p>
+
+    </div>
+  </div>
 </div>
 
-
-<div class="form-group">
-    <%= f.label :email, class: 'col-sm-2 control-label'  %>
-    <div class="col-sm-6">
-        <%= f.email_field :email, class: 'form-control'  %>
-    </div>
-</div>
-
-<div class="form-group">
-    <%= f.label :password, class: 'col-sm-2 control-label'  %> <i>(leave blank if you don't want to change it)</i>
-    <div class="col-sm-6">
-        <%= f.password_field :password, autocomplete: "off", class: 'form-control'  %>
-    </div>
-</div>
-
-
-<div class="form-group">
-    <%= f.label :password_confirmation, class: 'col-sm-2 control-label' %>
-    <div class="col-sm-6">
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control'  %>
-    </div>
-</div>
-
-<div class="form-group">
-    <%= f.label :current_password, class: 'col-sm-2 control-label' %> <i>(we need your current password to confirm your changes)</i>
-    <div class="col-sm-6">
-        <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
-    </div>
-</div>
-
-<div class="form-group">
-    <div class="col-sm-offset-2 col-sm-6">
-        <%= f.submit "Update", class: "btn btn-primary" %>
-    </div>
-</div>
-<% end %>
-
-<p>Do you want to leave us ? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger btn-xs' %></p>
-
-<%= link_to "Back", :back , class: "btn btn-primary"%>

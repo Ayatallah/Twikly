@@ -1,16 +1,21 @@
-<h2>Sign in</h2>
+<div class="container log-in">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2 class="center">Sign in</h2>
+</div>
+<div class="panel-body">
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
 <div class="form-group">
     <%= f.label :email, class: "col-sm-2 control-label" %>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <%= f.email_field :email, autofocus: true , class: "form-control" %>
     </div>
 </div>
 
 <div class="form-group">
     <%= f.label :password, class: "col-sm-2 control-label" %>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
     </div>
 </div>
@@ -24,10 +29,13 @@
 <% end -%>
 
 <div class="form-group">
-    <div class="col-sm-6 col-sm-offset-2">
+    <div class="col-sm-6 col-sm-offset-2 center">
         <%= f.submit "Sign in", class: 'btn btn-primary' %>
     </div>
 </div>
 
 
 <% end %>
+</div>
+</div>
+</div>
