@@ -10,7 +10,7 @@
          
     <h2><%= link_to post.title, post %></h2>
       <p class="lead">
-        by <%= link_to "Looprac", root_path %>
+        by <%= post.user.username %>
       </p>  
 
        <p class="date"><span class="glyphicon glyphicon-time"></span><%= post.created_at.strftime(" %B %d, %Y") %></p>
