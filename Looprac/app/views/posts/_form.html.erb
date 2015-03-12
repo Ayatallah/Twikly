@@ -1,3 +1,4 @@
+<div class="well">
 <%= form_for @post do |f| %>
  
   <% if @post.errors.any? %>
@@ -14,18 +15,20 @@
     </div>
   <% end %>
  
+ <div class="form-group">
   <p>
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title , class: 'form-control'%>
   </p>
  
   <p>
     <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.text_area :text, rows: 3, class: 'form-control'%>
   </p>
+</div>
  
   <p>
-    <%= f.submit %>
+    <%= f.submit "Update Post", class: "btn btn-primary", type: "submit" %>
   </p>
  
 <% end %>
