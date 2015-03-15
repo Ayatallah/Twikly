@@ -2,6 +2,7 @@
 	<div class="media">
 		<div class="media-body">
 		<h4 class="media-heading">
+		<% if comment.user %>
 			<%= comment.user.username %> 
 				<small><%= comment.created_at.strftime("%-d %B, %Y at %H:%M") %></small>
   		</h4>
@@ -12,7 +13,8 @@
 		<% if comment.user_id == current_user.id || user_signed_in? && current_user.admin? %>
 			<%= link_to 'Destroy', [comment.post, comment],
 				method: :delete,
-				data: { confirm: 'Are you sure ya admin?' } %>
+				data: { confirm: 'Are you sure ?' } %>
 		<%end%>              
 	</p>
+	<%end%>
 <% end %>
