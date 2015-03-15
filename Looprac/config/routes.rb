@@ -21,6 +21,8 @@ resources :users do
   resources :posts
 end
 
+resources :conversations, only: [:index, :show, :destroy]
+
   root 'welcome#index'
 
   get "welcome/Registration"

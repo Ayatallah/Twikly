@@ -1,0 +1,7 @@
+<% page_header "Your Conversations" %>
+ 
+<ul class="list-group">
+  <%= render partial: 'conversations/conversation', collection: @conversations %>
+</ul>
+ 
+<%= will_paginate %>
