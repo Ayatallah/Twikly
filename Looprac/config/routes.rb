@@ -21,7 +21,12 @@ resources :users do
   resources :posts
 end
 
-resources :conversations, only: [:index, :show, :destroy]
+resources :conversations, only: [:index, :show, :destroy] do
+  member do
+    post :reply
+  end
+end    
+resources :messages , only: [:new ,:create]
 
   root 'welcome#index'
 

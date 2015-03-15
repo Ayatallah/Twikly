@@ -10,6 +10,13 @@ class ConversationsController < ApplicationController
 		@conversation = @mailbox.conversations.find(params[:id])
 	end	
 
+	def reply
+		@conversation = @mailbox.conversations.find(params[:id])
+		@body = params[:body]
+		current_user.reply_to_conversation(@conversation , @body)
+		redirect_to conversation_path(@conversation)	
+	end	
+
 	private
 
 	def get_mailbox
