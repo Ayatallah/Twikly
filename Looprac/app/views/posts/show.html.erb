@@ -42,9 +42,14 @@
     <h4>Share on Twitter or Facebook or G+</h4>
         <%= social_share_button_tag(@post.title, :popup => "true") %>
   <hr>
-
-<button type="button" class="btn btn-default"><%= link_to 'Back', posts_path %></button>
-<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button>
+  <% if user_signed_in? %>
+    <h2>Comments</h2>
+    <%= render @post.comments %>
+    <h2>Add a comment:</h2>
+    <%= render 'comments/form' %>
+  <% end %>
+  <button type="button" class="btn btn-default"><%= link_to 'Back', posts_path %></button>
+  <!--<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button>-->
 
 </div>
 </div>

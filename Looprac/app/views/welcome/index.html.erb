@@ -7,6 +7,9 @@
 
 	<div class="container">
 	<br>
+		<% if user_signed_in? %>
+			<p> Signed in as <%= current_user.email %></p>
+		<% end %>
 		<div class="jumbotron">
 			<h1>Some homepage stuff goes here</h1>
 			<%= render 'shared/breaks' %>

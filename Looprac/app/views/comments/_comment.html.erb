@@ -7,11 +7,12 @@
   		</h4>
   		<%= comment.body %>
   	</div>
-  	<p>
-  		</div>
-    	<%= link_to 'Destroy', [comment.post, comment],
-           		method: :delete,
-                data: { confirm: 'Are you sure?' } %>
-    </p>
+  	</div>
+    <p>
+		<% if comment.user_id == current_user.id || user_signed_in? && current_user.admin? %>
+			<%= link_to 'Destroy', [comment.post, comment],
+				method: :delete,
+				data: { confirm: 'Are you sure ya admin?' } %>
+		<%end%>              
+	</p>
 <% end %>
-

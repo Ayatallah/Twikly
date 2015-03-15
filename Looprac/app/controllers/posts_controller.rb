@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+
+  before_filter :authenticate_user!, except: [ :index, :show ]
+  before_filter :ensure_admin!, except: [ :index, :show, :upvote, :downvote ]
+  
+
 	def new
 		@post = Post.new
 	end
@@ -53,6 +58,13 @@ class PostsController < ApplicationController
     	redirect_to @post
     end
 private
+  def ensure_admin!
+    unless current_user.admin?
+      redirect_to root_path
+
+      return false
+    end
+  end
   def post_params
     params.require(:post).permit(:title, :text)
   end
