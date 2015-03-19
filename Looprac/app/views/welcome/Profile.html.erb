@@ -11,10 +11,10 @@
             <!--left col-->
             <ul class="list-group">
                 <li class="list-group-item text-muted main-color" contenteditable="false">Profile</li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Name</strong></span> <%= current_user.username %> </li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined</strong></span> <%= current_user.created_at %> </li>
-                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last seen</strong></span> <%= current_user.last_sign_in_at %></li>
-            	<li class="list-group-item text-right"><span class="pull-left"><strong class="">Rank: </strong></span> <%= current_user.sign_in_count %> </li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Name</strong></span><%= current_user.username %></li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined</strong></span><%= current_user.created_at %></li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last seen</strong></span><%= current_user.last_sign_in_at %></li>
+            	<li class="list-group-item text-right"><span class="pull-left"><strong class="">Rank: </strong></span><%= current_user.sign_in_count %></li>
             </ul>
             <div class="panel panel-default">
              <div class="panel-heading">
