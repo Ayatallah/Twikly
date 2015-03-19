@@ -31,13 +31,13 @@
     <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
     -->
 
-    <button type="button" class="btn btn-info" aria-label="Left Align">
+    <button type="button" class="btn btn-info disabled" aria-label="Left Align">
     <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
     <span class="badge"><%= post.get_upvotes.size %></span>
   </button>
 
     
-    <button type="button" class="btn btn-info" aria-label="Left Align">
+    <button type="button" class="btn btn-info disabled" aria-label="Left Align">
     <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
     <span class="badge"><%= post.get_downvotes.size %></span>
   </button>
